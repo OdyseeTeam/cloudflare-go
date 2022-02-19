@@ -21,6 +21,7 @@ type StreamInput struct {
 
 type RecordingState struct {
 	Mode              string   `json:"mode"`
+	TimeoutSeconds    int64    `json:"timeoutSeconds"`
 	RequireSignedURLs bool     `json:"requireSignedURLs"`
 	AllowedOrigins    []string `json:"allowedOrigins"`
 }
